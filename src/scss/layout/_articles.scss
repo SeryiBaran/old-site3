@@ -1,0 +1,30 @@
+p {
+  margin-top: 24px;
+}
+.article-content_main_unit__txt {
+  line-height: 23px;
+}
+.article_foto {
+  margin: 1px 0;
+}
+.article_foto img {
+  width: 100%;
+  margin: 25px 0;
+}
+@media (max-width: $wrapper-max-width) {
+  .article-title_div {
+    padding: 25px;
+  }
+  .article-main-unit {
+    padding: 0;
+  }
+  .article-content_main_unit__txt {
+    padding: 10px;
+  }
+  .article_foto {
+    margin-top: 25px;
+  }
+  .article_foto img {
+    margin: 1px 0;
+  }
+}

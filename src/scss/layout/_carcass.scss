@@ -1,0 +1,25 @@
+.pseudo_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-image: url(../img/back.webp);
+  background-size: 250px;
+}
+.wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: $wrapper-max-width;
+}
+.main_unit {
+  flex: 1 1 auto;
+  padding: 25px;
+  background-color: $primary-color;
+}
+.content_main_unit {
+  display: flex;
+  flex-direction: column;
+}

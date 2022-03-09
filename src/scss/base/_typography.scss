@@ -1,0 +1,22 @@
+* {
+  font-family: 'Noto Sans';
+}
+
+p {
+  margin-top: 13px;
+  font-size: 18px;
+}
+
+a {
+  color: $links-color;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $visited-links-color;
+}
+
+.header-txt {
+  font-size: 30px;
+  text-align: center;
+}

@@ -1,0 +1,102 @@
+._1_half_of_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+._1_half_of_content__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.hello {
+  flex-grow: 1;
+  margin-top: 13px;
+  margin-bottom: 33px;
+  font-size: 45px;
+}
+.who_i {
+  flex-grow: 1;
+  margin-bottom: 33px;
+  font-size: 18px;
+}
+._2_half_of_content {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
+._2_half_of_content p {
+  margin-top: 25px;
+  line-height: 23px;
+}
+.social {
+  margin-top: $margin-components;
+  padding: 25px 15px;
+  background-color: $primary-color;
+}
+.txt_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.txt_buttons span {
+  margin-right: 5px;
+}
+.txt_buttons__gmail {
+  height: 15px;
+}
+.buttons_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #4d4d4d dashed 1px;
+  font-weight: 700;
+  text-align: center;
+  span {
+    font-family: inherit;
+  }
+}
+.button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100%;
+  margin: 7px 6px;
+  padding: 5px;
+  border: #4d4d4d dashed 1px;
+  border-radius: 3px;
+  background-color: #bebebe;
+  text-align: center;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #cecece;
+}
+.button_img {
+  width: 45px;
+  height: 45px;
+}
+.button span {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 700;
+}
+.square_button_img {
+  border-radius: 5px;
+}
+.circle_button_img {
+  border-radius: 100%;
+}

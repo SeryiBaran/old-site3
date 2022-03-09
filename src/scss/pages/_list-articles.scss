@@ -1,0 +1,20 @@
+.articles_list_div {
+  flex: 1 1 auto;
+  margin-top: 30px;
+}
+.articles_list li {
+  margin: 30px 0;
+}
+.articles_list li a {
+  padding-left: 27px;
+  background: url(../img/pensil.webp);
+  background-position: 3px center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  color: #040029;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.articles_list li a:hover {
+  color: #d96f00;
+}

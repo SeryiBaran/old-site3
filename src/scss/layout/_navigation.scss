@@ -1,0 +1,36 @@
+.horizontal_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 80px;
+  margin-bottom: $margin-components;
+  background-color: $primary-color;
+  list-style-type: none;
+  a {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 150px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px dashed #000;
+    border-radius: 7px;
+    background-color: #863100;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    text-decoration: none;
+  }
+  a:hover {
+    font-size: 23px;
+  }
+  div {
+    margin: 7px 10px;
+  }
+  .active {
+    color: #c2c2c2;
+    font-size: 23px;
+    pointer-events: none;
+  }
+}
