@@ -4,11 +4,11 @@
 @import 'abstracts/placeholders';
 
 @import 'vendors/normalize';
+@import 'vendors/flickity.min';
 
 @import 'vendors-extensions/normalize';
 
 @import 'base/typography';
-// @import "base/fonts";
 
 @import 'layout/carcass';
 @import 'layout/articles';
