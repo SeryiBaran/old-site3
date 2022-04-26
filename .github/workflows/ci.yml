@@ -1,0 +1,32 @@
+name: build
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Build and deploy
+        run: |
+          git config --global user.name "GitHub Actions"
+          git checkout --orphan gh-pages
+          cd frontend
+          npm install
+          npm run prod
+          cd ..
+          git --work-tree dist add --all
+          git --work-tree dist commit -m 'Deploy'
+          git push origin HEAD:gh-pages --force
+          rm -r dist
+          git checkout -f main
+          git branch -D gh-pages
