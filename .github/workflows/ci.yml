@@ -20,10 +20,8 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git checkout --orphan gh-pages
-          cd frontend
           npm install
           npm run prod
-          cd ..
           git --work-tree dist add --all
           git --work-tree dist commit -m 'Deploy'
           git push origin HEAD:gh-pages --force
