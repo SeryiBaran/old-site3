@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/back.webp);
-  background-size: 250px;
+  background-image: $primary-bg;
 }
 .wrapper {
   display: flex;
